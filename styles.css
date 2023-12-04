@@ -1,0 +1,17 @@
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+    background-color: #261b13;
+    
+}
+
+p, table {color: #fff7db}
+h1, h2 {text-align: center; color: #fff7db}
+b, mark {color: #ffae57; background-color: #261b13;}
+a {color: #ffd885; text-decoration: none;}
+a:hover {text-decoration: underline}
