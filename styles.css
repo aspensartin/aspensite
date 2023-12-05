@@ -12,6 +12,8 @@ h1, h2 {text-align: center}
 ul {padding: 0;
     list-style-position:inside}
 
+u {text-decoration: none}
+
 b, mark {color: #ffa340;
     background-color: #261b13;}
 
