@@ -1,17 +1,21 @@
-html {
-    display: table;
-    margin: auto;
-}
+html {display: table; 
+    margin: auto;}
 
-body {
-    display: table-cell;
+body {display: table-cell;
     vertical-align: middle;
-    background-color: #261b13;
-    
-}
+    background-color: #261b13;}
 
-p, table {color: #fff7db}
-h1, h2 {text-align: center; color: #fff7db}
-b, mark {color: #ffae57; background-color: #261b13;}
-a {color: #ffd885; text-decoration: none;}
+p, ul, table, h1, h2 {color: #fff7db}
+
+h1, h2 {text-align: center}
+
+ul {padding: 0;
+    list-style-position:inside}
+
+b, mark {color: #ffa340;
+    background-color: #261b13;}
+
+a {color: #ffd969;
+    text-decoration: none;}
+
 a:hover {text-decoration: underline}
