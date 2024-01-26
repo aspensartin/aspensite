@@ -6,7 +6,11 @@ body {display: table-cell;
     background-color: #261b13
     }
 
-p, ul, li, table, h1, h2 {color: #fff7db}
+p, ul, li, a, b {font-family: Tahoma, sans-serif}
+
+h1, h2 {font-family: Trebuchet MS, sans-serif}
+
+p, ul, li, h1, h2 {color: #fff7db}
 
 h1, h2 {text-align: center}
 
