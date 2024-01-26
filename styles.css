@@ -3,7 +3,8 @@ html {display: table;
 
 body {display: table-cell;
     vertical-align: middle;
-    background-color: #261b13;}
+    background-color: #261b13
+    }
 
 p, ul, li, table, h1, h2 {color: #fff7db}
 
