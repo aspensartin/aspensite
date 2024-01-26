@@ -3,21 +3,23 @@ html {display: table;
 
 body {display: table-cell;
     vertical-align: middle;
-    background-color: #261b13
+    background-color: #261b13;
     }
 
-p, ul, li, a, b {font-family: Tahoma, Verdana, sans-serif}
+p, ul, li, a, b {font-family: Tahoma, Verdana, sans-serif;}
 
-h1, h2 {font-family: Trebuchet MS, sans-serif}
+h1, h2 {font-family: Trebuchet MS, sans-serif;}
 
-p, ul, li, h1, h2 {color: #fff7db}
+p, ul, li, h1, h2 {color: #fff7db;}
 
 h1, h2 {text-align: center}
 
 ul {padding: 0;
-    list-style-position:inside}
+    list-style-position:inside;}
 
-u {text-decoration: none}
+li + li {margin-top: 8px;}
+
+u {text-decoration: none;}
 
 b, mark {color: #ffa340;
     background-color: #261b13;}
@@ -25,4 +27,4 @@ b, mark {color: #ffa340;
 a {color: #ffd969;
     text-decoration: none;}
 
-a:hover {text-decoration: underline}
+a:hover {text-decoration: underline;}
