@@ -21,27 +21,33 @@
   </head>
 
   <body style="padding: 32px">
-  <h1 style="margin-top: 10px; margin-bottom: 32px">hi, I'm <mark>Aspen</mark>!</h1>
-  <ul>
+  
+    <h1 style="margin-top: 10px; margin-bottom: 32px">hi, I'm <mark>Aspen</mark>!</h1>
+  
+    <ul>
     <li>21 years old, british, queer (<b>they/them</b> or <b>she/her</b>)</li>
     <li>novice block stacker, yuri visual novel enthusiast (read <a href=https://vnstudioelan.com/games/please-be-happy><i>Please Be Happy</i></a>&thinsp;!)</li>
     <li>earth science student specialising in palaeoceanography, earth system modelling</li></ul>
-  <p style="margin-top: 0px; margin-bottom: 8px">I speak <b>English</b> // ich kann ein bisschen <b>Deutsch</b></p>
-  <p style="margin-top: 0px;">mi kama sona e <b>toki pona</b> // jeg lærer meg <b>norsk</b></p>
-  <p style="margin-top: 0px;">current timezone: London (GMT). right now, it's <u id="time"></u> for me</p>
-
-  <script>  
-    var date = new Date();
-    var time = date.toLocaleTimeString([], {timeZone: "UTC", timeStyle: "short"});
-    document.getElementById("time").innerHTML = time;
-  </script>
   
-  <h2 style="margin-top: 32px; margin-bottom: 32px;">links/contact</h2>
-  <p><b>autumnaspen</b> on discord</p>
-  <p><a href="https://twitter.com/aspenbtw">twitter</a>
-  &emsp;<a href="https://ch.tetr.io/u/aspen">tetr.io</a>
-  &emsp;<a href="https://github.com/aspensartin">github</a>
-  &emsp;<a href="https://pronouns.page/@autumnaspen">pronouns.page</a></p>
+    <p style="margin-top: 0px; margin-bottom: 5px">I speak <b>English</b> // ich kann ein bisschen <b>Deutsch</b></p>
+    <p style="margin-top: 0px;">mi kama sona e <b>toki pona</b> // jeg lærer meg <b>norsk</b></p>
+    <p>current timezone: London (GMT). right now, it's <u id="time"></u> for me</p>
 
+    <script>  
+      var date = new Date();
+      var time = date.toLocaleTimeString([], {timeZone: "UTC", timeStyle: "short"});
+      document.getElementById("time").innerHTML = time;
+    </script>
+  
+    <h2 style="margin-top: 32px; margin-bottom: 32px;">links/contact</h2>
+  
+    <div class="flex-container">
+      <div><a href="https://twitter.com/aspenbtw">twitter</a></div>
+      <div><a href="https://ch.tetr.io/u/aspen">tetr.io</a></div>
+      <div><a href="https://github.com/aspensartin">github</a></div>
+      <div><a href="https://pronouns.page/@autumnaspen">pronouns.page</a></div>
+      <div><p style="margin-top: 0px;"><b>autumnaspen</b> on discord</p></div>
+    </div>
   </body>
+
 </html>

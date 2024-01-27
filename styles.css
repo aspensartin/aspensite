@@ -17,7 +17,7 @@ h1, h2 {text-align: center}
 ul {padding: 0;
     list-style-position:inside;}
 
-li + li {margin-top: 8px;}
+li + li {margin-top: 5px;}
 
 u {text-decoration: none;}
 
@@ -28,3 +28,5 @@ a {color: #ffd969;
     text-decoration: none;}
 
 a:hover {text-decoration: underline;}
+
+div.flex-container {justify-content: space-between; display: flex;}
