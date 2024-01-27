@@ -31,4 +31,4 @@ a:hover {text-decoration: underline;}
 
 div.flex-container {justify-content: space-between; display: flex;}
 @media (max-width: 600px) {
-    div.flex-container {justify-content: center; display: flex;} }
+    div.flex-container {justify-content: safe center; display: flex;} }
