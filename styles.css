@@ -6,11 +6,11 @@ body {display: table-cell;
     background-color: #261b13;
     }
 
-p, ul, li, a, b {font-family: Tahoma, Verdana, sans-serif;}
+p, ul, li, a, b, div {font-family: Tahoma, Verdana, sans-serif;}
 
 h1, h2 {font-family: Trebuchet MS, sans-serif;}
 
-p, ul, li, h1, h2 {color: #fff7db;}
+p, ul, li, h1, h2, div {color: #fff7db;}
 
 h1, h2 {text-align: center} 
 
@@ -29,5 +29,5 @@ a {color: #ffd969;
 
 a:hover {text-decoration: underline;}
 
-.socials {justify-content: space-between; display: flex; flex-wrap: wrap; row-gap: 5px; column-gap: 1em;}
-.socials>* {flex: 1 1 500;}
+.spaced {justify-content: space-between; display: flex; flex-wrap: wrap; row-gap: 5px; column-gap: 1em;}
+.spaced>* {flex: 1 1 500;}
