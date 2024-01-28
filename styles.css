@@ -31,3 +31,9 @@ a:hover {text-decoration: underline;}
 
 .spaced {justify-content: space-between; display: flex; flex-wrap: wrap; row-gap: 5px; column-gap: 1em;}
 .spaced>* {flex: 1 1 500;}
+
+.jank {text-align: right}
+
+@media(max-width: 500px){
+    .jank {text-align: left}
+}
