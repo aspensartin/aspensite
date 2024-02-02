@@ -3,16 +3,45 @@ html {display: table;
 
 body {display: table-cell;
     vertical-align: middle;
-    background-color: #261b13;
+    background-color: #1E252D;
     }
 
-p, ul, li, a, b, div {font-family: Tahoma, Verdana, sans-serif;}
+@font-face {
+    font-family: "Comic Neue Angular";
+    src: url("ComicNeueAngular-Regular.ttf");
+    src: url("ComicNeueAngular-Regular.woff") format("woff"),
+    url("ComicNeueAngular-Regular.otf") format("opentype"),
+    url("ComicNeueAngular-Regular.woff2") format("woff2"); }
 
-h1, h2 {font-family: Trebuchet MS, sans-serif;}
+@font-face {
+    font-family: "Comic Neue Angular Bold";
+    src: url("ComicNeueAngular-Bold.ttf");
+    src: url("ComicNeueAngular-Bold.woff") format("woff"),
+    url("ComicNeueAngular-Bold.otf") format("opentype"),
+    url("ComicNeueAngular-Bold.woff2") format("woff2"); }
 
-p, ul, li, h1, h2, div {color: #fff7db;}
+@font-face {
+    font-family: "Comic Neue Angular Light";
+    src: url("ComicNeueAngular-Light.ttf");
+    src: url("ComicNeueAngular-Light.woff") format("woff"),
+    url("ComicNeueAngular-Light.otf") format("opentype"),
+    url("ComicNeueAngular-Light.woff2") format("woff2"); }
 
-h1, h2 {text-align: center} 
+p, ul, li, a, div {font-family: 'Comic Neue Angular Light';}
+
+a {font-family: 'Comic Neue Angular';}
+
+h1, h2, b {font-family: 'Comic Neue Angular Bold';}
+
+p, ul, li, h1, h2, div {color: #fff;}
+
+h1, h2 {text-align: center}
+
+p, li, div  {font-size: 18px;}
+
+h1 {font-size: 36px}
+
+h2 {font-size: 28px}
 
 ul {padding: 0;
     list-style-position:inside;}
@@ -21,10 +50,10 @@ li + li {margin-top: 5px;}
 
 u {text-decoration: none;}
 
-b, mark {color: #ffa340;
-    background-color: #261b13;}
+b, mark {color: #FFA9C6;
+    background-color: #1E252D;}
 
-a {color: #ffd969;
+a {color: #D3B5FF;
     text-decoration: none;}
 
 a:hover {text-decoration: underline;}
