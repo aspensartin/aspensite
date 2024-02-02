@@ -65,5 +65,10 @@ a:hover {text-decoration: underline;}
 .jank {text-align: right}
 
 @media(max-width: 460px){
+    body {padding-top: 32px}
     .jank {text-align: left}
+    img {padding-bottom: 24px}
+
 }
+
+@media(min-width: 460px){img {padding-left: 24px;} }
