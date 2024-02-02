@@ -44,7 +44,8 @@ h1 {font-size: 36px}
 h2 {font-size: 28px}
 
 ul {padding: 0;
-    list-style-position:inside;}
+    list-style-position:inside;
+    list-style-type: circle;}
 
 li + li {margin-top: 5px;}
 
@@ -58,7 +59,7 @@ a {color: #D3B5FF;
 
 a:hover {text-decoration: underline;}
 
-.spaced {justify-content: space-between; display: flex; flex-wrap: wrap; row-gap: 5px; column-gap: 1em;}
+.spaced {justify-content: space-between; display: flex; flex-wrap: wrap; row-gap: 5px; column-gap: 0.25em;}
 .spaced>* {flex: 1 1 500;}
 
 .jank {text-align: right}

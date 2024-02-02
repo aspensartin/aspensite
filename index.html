@@ -20,39 +20,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body style="padding: 32px">
-  
-    <h1 style="margin-top: 10px; margin-bottom: 32px">hi, I'm <mark>Aspen</mark>!</h1>
-  
-    <ul>
-    <li>21 years old, british, queer (<b>they/them</b> or <b>she/her</b>)</li>
-    <li>novice block stacker, yuri visual novel enthusiast (read <a href=https://vnstudioelan.com/games/please-be-happy><i>Please Be Happy</i></a>&thinsp;!)</li>
-    <li>earth science student specialising in palaeoceanography, earth system modelling</li>
-    </ul>
-      
-    <div class="spaced">
-      <div>I speak <b>English</b> <p style="margin-top: 5px; margin-bottom: 0px">ich kann ein bisschen <b>Deutsch</b></p></div>
-      <div class="jank">mi kama sona e <a href="toki/"><b>toki pona</b></a> <p style="margin-top: 5px; margin-bottom: 0px">jeg lærer meg <b>norsk</b></p></div>
-    </div>
+  <body style="padding: 40px; max-width: 1200px;">
     
-  <p style="text-align: center;">current timezone: London (GMT). right now, it's <u id="time"></u> for me</p>
+    
+    <img src="aspen.png" alt="Character art of Aspen by @grimberriz" width="240px" style="padding-left: 24px;">
+    
+      <div style="float: left; max-width: 326px;">
+        <h1 style="margin-top: 0px; margin-bottom: 5px">hi, I'm <mark>Aspen</mark>!</h1>
+        <p style="margin-top: 0px; margin-bottom: 32px; text-align: center;"><b>they/them</b> or <b>she/her</b></p>
+        <p style="text-align: justify;">I'm a master's student from the UK specialising in palaeoceanography and palaeoclimate. Staff member and general liability at <a href="https://twitter.com/PuzzleKingdom">Puzzle Kingdom,</a> yuri visual novel enthusiast (read <a href=https://vnstudioelan.com/games/please-be-happy><i>Please Be Happy</i></a>&thinsp;!)</p>
 
-    <script>  
-      var date = new Date();
-      var time = date.toLocaleTimeString([], {timeZone: "UTC", timeStyle: "short"});
-      document.getElementById("time").innerHTML = time;
-    </script>
-  
-    <h2 style="margin-top: 32px; margin-bottom: 32px;">links/contact</h2>
-  
-    <div class="spaced">
-      <div><a href="https://twitter.com/aspenbtw">twitter</a></div>
-      <div><a href="https://ch.tetr.io/u/aspen">tetr.io</a></div>
-      <div><a href="https://github.com/aspensartin">github</a></div>
-      <div><a href="https://pronouns.page/@autumnaspen">pronouns.page</a></div>
-      <div><b>autumnaspen</b> on discord</div>
+        <ul>
+          <li>I speak <b>English</b></li>
+          <li>ich kann ein bisschen <b>Deutsch</b></li>
+          <li>mi kama sona e <a href="toki/"><b>toki pona</b></a></li>
+          <li>jeg lærer meg <b>norsk</b></li>
+        </ul>
+        
+
+      <p style="margin-top: 0px;">current timezone: London (GMT).
+        <br>it's <u id="time"></u> for me</p>
+
+      <p>character art by <a href="https://twitter.com/grimberriz">@grimberriz</a>!</p>
+
+      <script>  
+        var date = new Date();
+        var time = date.toLocaleTimeString([], {timeZone: "UTC", timeStyle: "short"});
+        document.getElementById("time").innerHTML = time;
+      </script>
+      
     </div>
-    <p style="text-align: center; font-size: 16px;">(what's the font? it's <a href="https://comicneue.com/">Comic Neue Angular</a>)</p>
+  
+      <h2 style="margin-top: 24px; margin-bottom: 32px;">links/contact</h2>
+  
+      <div class="spaced">
+        <div><a href="https://twitter.com/aspenbtw">twitter</a></div>
+        <div><a href="https://ch.tetr.io/u/aspen">tetr.io</a></div>
+        <div><a href="https://github.com/aspensartin">github</a></div>
+        <div><a href="https://pronouns.page/@autumnaspen">pronouns.page</a></div>
+        <div><b>autumnaspen</b> on discord</div>
+      </div>
+      <p style="font-size: 16px; text-align: center;">(what's the font? it's <a href="https://comicneue.com/">Comic Neue Angular</a>)</p>
   </body>
 
 </html>
