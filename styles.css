@@ -67,4 +67,4 @@ a:hover {text-decoration: underline;}
 @media(max-width: 460px){
     body {padding-top: 32px}
     .jank {text-align: left}
-    img {display: none;} }
+    .aspen {display: none;} }
