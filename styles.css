@@ -71,4 +71,4 @@ a.nounderline:hover {text-decoration: none;}
 @media(max-width: 650px){
     body {padding-top: 32px}
     .jank {text-align: left}
-    .aspen {display: none; width: 0; height: 0;} }
+    .aspen {width: 0; height: 0;} }
