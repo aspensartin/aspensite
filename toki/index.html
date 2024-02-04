@@ -22,8 +22,10 @@
 
   <body style="padding: 40px; max-width: 1200px;">
     
-    
-    <img src="../aspen.png" alt="Character art of Aspen by @grimberriz" class="aspen" width="240px" style="padding-left: 24px;">
+    <div class="aspen" id="scene" style="float: right; padding-bottom: 24px;">
+      <img src="../aspenbackground.png" alt="art of Aspen by @grimberriz" width="240px" style="padding-left: 24px;" data-depth="-0.075">
+      <img src="../aspentransparent.png" alt="art of Aspen by @grimberriz" width="202px" style="padding-left: 42px;" data-depth="0.25">
+    </div>
     
       <div style="float: left; max-width: 326px;">
         <h1 style="margin-top: 0px; margin-bottom: 32px">toki! mi jan <mark>Apen</mark>!</h1>
@@ -42,6 +44,16 @@
 
       <p>jan pi ni musi kule li jan <a href="https://twitter.com/grimberriz">@grimberriz</a>!</p>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    
+      <script>
+        addEventListener("DOMContentLoaded", (event) => {
+          var scene = document.getElementById("scene");
+          var parallaxInstance = new Parallax(scene, {scalarY: 0
+          });
+        });
+      </script>
+
       <script>  
         var date = new Date();
         var time = date.toLocaleTimeString([], {timeZone: "UTC", timeStyle: "short"});
@@ -50,7 +62,7 @@
       
     </div>
   
-      <h2 style="margin-top: 24px; margin-bottom: 32px;">o toki tawa mi kepeken:</h2>
+      <h2 style="padding-top: 424px; margin-bottom: 32px;">o toki tawa mi kepeken:</h2>
   
       <div class="spaced">
         <div><a href="https://twitter.com/aspenbtw">twitter</a></div>

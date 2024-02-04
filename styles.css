@@ -64,6 +64,8 @@ a:hover {text-decoration: underline;}
 
 .jank {text-align: right}
 
+.parallax {position: relative; left: 500px}
+
 @media(max-width: 460px){
     body {padding-top: 32px}
     .jank {text-align: left}
