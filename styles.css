@@ -68,7 +68,7 @@ a.nounderline:hover {text-decoration: none;}
 
 .parallax {position: relative; left: 500px}
 
-@media(max-width: 460px){
+@media(max-width: 650px){
     body {padding-top: 32px}
     .jank {text-align: left}
     .aspen {display: none; width: 0; height: 0;} }
