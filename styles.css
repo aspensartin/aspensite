@@ -49,12 +49,12 @@ ul {padding: 0;
 
 li + li {margin-top: 5px;}
 
-u {text-decoration: none;}
+u {text-decoration: none;}  
 
 b, mark {color: #FFA9C6;
     background-color: #1E252D;}
 
-a {color: #D3B5FF;
+a {color: #D3B5FF;  
     text-decoration: none;}
 
 a:hover {text-decoration: underline;}
@@ -68,8 +68,9 @@ a.nounderline:hover {text-decoration: none;}
 
 .parallax {position: relative; left: 500px}
 
-@media(max-width: 650px){
-    body {padding-top: 32px}
-    .jank {text-align: left}
-    .aspen {display: none;} 
-    .maintext {float: none; min-width: 590px;}}
+@media (min-width: 670px){.maintext {max-width: 590px;}}
+
+@media(max-width: 670px){
+    .maintext {max-width: none;}
+    .aspen{width: 0%; display: none;}
+}

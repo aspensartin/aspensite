@@ -20,32 +20,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body style="padding: 40px; max-width: 1200px;">
+  <body style="padding: 40px;" style="max-width: 600px;">
 
     <div class="aspen" id="scene" style="float: right; padding-bottom: 24px;">
-      <img src="aspenbackground.png" alt="art of Aspen by @grimberriz" width="240px" style="padding-left: 24px;" data-depth="-0.075" class="aspen">
-      <img src="aspentransparent.png" alt="art of Aspen by @grimberriz" width="202px" style="padding-left: 42px;" data-depth="0.25" class="aspen">
+      <img src="aspenbackground.png" alt="art of Aspen by @grimberriz" width="240px" style="padding-left: 24px;" data-depth="-0.075" class="background">
+      <img src="aspentransparent.png" alt="art of Aspen by @grimberriz" width="202px" style="padding-left: 42px;" data-depth="0.25" class="aspentransparent">
     </div>
 
-    <div style="max-width: 326px;">
+    <div class="maintext">
       <h1 style="margin-top: 0px; margin-bottom: 5px">hi, I'm <mark>Aspen</mark>!</h1>
       <p style="margin-top: 0px; margin-bottom: 32px; text-align: center;"><b>they/them</b> or <b>she/her</b></p>
-      <p style="text-align: justify;">I'm a master's student from the UK specialising in palaeoceanography and palaeoclimate. Staff member and general liability at <a href="https://twitter.com/PuzzleKingdom">Puzzle Kingdom,</a> yuri visual novel enthusiast (read <a href=https://vnstudioelan.com/games/please-be-happy><i>Please Be Happy</i></a>&thinsp;!)</p>
+      <p  style="text-align: justify;">I'm a master's student from the UK specialising in palaeoceanography and palaeoclimate. Staff member and general liability at <a href="https://twitter.com/PuzzleKingdom">Puzzle Kingdom,</a> yuri visual novel enthusiast (read <a href=https://vnstudioelan.com/games/please-be-happy><i>Please Be Happy</i></a>&thinsp;!)</p>
 
-      <ul>
+      <ul>  
         <li>I speak <b>English</b></li>
         <li>ich kann ein bisschen <b>Deutsch</b></li>
         <li>mi kama sona e <a class="nounderline" href="toki/"><b>toki pona</b></a></li>
         <li>jeg lærer meg <b>norsk</b></li>
       </ul>
         
-
       <p style="margin-top: 0px;">current timezone: London (GMT).
-      <br>it's <u id="time"></u> for me</p>
+      it's <u id="time"></u> for me</p>
 
       <p>character art by <a href="https://twitter.com/grimberriz">@grimberriz</a>!</p>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     
     <script>
@@ -63,17 +62,18 @@
       document.getElementById("time").innerHTML = time;
     </script>
 
-    <h2 style="min-width: 590px; margin-top: 24px; margin-bottom: 32px;">links/contact</h2>
+    <div class="contacts">
+      <h2 style="margin-top: 24px; margin-bottom: 32px;">links/contact</h2>
 
-    <div class="spaced">
-      <div><a href="https://twitter.com/aspenbtw">twitter</a></div>
-      <div><a href="https://ch.tetr.io/u/aspen">tetr.io</a></div>
-      <div><a href="https://github.com/aspensartin">github</a></div>
-      <div><a href="https://pronouns.page/@autumnaspen">pronouns.page</a></div>
-      <div><b>autumnaspen</b> on discord</div>
+      <div class="spaced">
+        <div><a href="https://twitter.com/aspenbtw">twitter</a></div>
+        <div><a href="https://ch.tetr.io/u/aspen">tetr.io</a></div>
+        <div><a href="https://github.com/aspensartin">github</a></div>
+        <div><a href="https://pronouns.page/@autumnaspen">pronouns.page</a></div>
+        <div><b>autumnaspen</b> on discord</div>
+      </div>
+      <p style="font-size: 16px; text-align: center;">(what's the font? it's <a href="https://comicneue.com/">Comic Neue Angular</a>)</p>
     </div>
-    <p style="font-size: 16px; text-align: center;">(what's the font? it's <a href="https://comicneue.com/">Comic Neue Angular</a>)</p>
-
   </body>
 
 </html>
