@@ -41,7 +41,7 @@ p, li, div  {font-size: 18px;}
 
 h1 {font-size: 36px}
 
-h2 {font-size: 28px}
+h2 {font-size: 24px}
 
 ul {padding: 0;
     list-style-position:inside;
@@ -73,16 +73,18 @@ a.ringlink:hover::after {
     content: attr(hovertext)
 }
 
-.flexbox {justify-content: space-between; display: flex; flex-wrap: wrap; row-gap: 5px; column-gap: 1em; max-width: 590px;}
+.flexbox {justify-content: space-between; display: flex; flex-wrap: wrap; row-gap: 5px; column-gap: 15px; max-width: 57  0px;}
 .flexbox>* {flex: 1 1 600;}
 
 .jank {text-align: right}
 
 .parallax {position: relative; left: 500px}
 
-@media (min-width: 670px){.maintext {max-width: 590px;}}
+@media (min-width: 650px){.maintext {max-width: 570px;}}
 
-@media(max-width: 670px){
+@media(max-width: 650px){
     .maintext {max-width: none;}
     .aspen{width: 0%; display: none;}
 }
+
+.maintext {min-width: 678px}
