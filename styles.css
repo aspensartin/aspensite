@@ -80,11 +80,7 @@ a.ringlink:hover::after {
 
 .parallax {position: relative; left: 500px}
 
-@media (min-width: 650px){.maintext {max-width: 570px;}}
+.maintext {max-width: 678px;}
 
-@media(max-width: 650px){
-    .maintext {max-width: none;}
-    .aspen{width: 0%; display: none;}
-}
-
-.maintext {min-width: 678px}
+@media (max-width: 678px){
+    .aspen {width: 0%; display: none;}
