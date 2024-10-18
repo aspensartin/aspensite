@@ -35,35 +35,37 @@
       <p>Languages: <b>English</b> (fluent), <b>German</b> (conversational), <b>toki pona</b> (learning).</p>
       <p>Timezone: London (BST). Right now, it's <u id="time"></u> for me.</p>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     
-    <script>
-      addEventListener("DOMContentLoaded", (event) => {
-        var scene = document.getElementById("scene");
-        var parallaxInstance = new Parallax(scene, {scalarY: 0
+      <script>
+        addEventListener("DOMContentLoaded", (event) => {
+          var scene = document.getElementById("scene");
+          var parallaxInstance = new Parallax(scene, {scalarY: 0
+          });
         });
-      });
-    </script>
+      </script>
 
-    <script>  
-      var date = new Date();
-      var time = date.toLocaleTimeString([], {timeZone: "UTC", timeStyle: "short"});
-      document.getElementById("time").innerHTML = time;
-    </script>
+      <script>  
+        var date = new Date();
+        var time = date.toLocaleTimeString([], {timeZone: "UTC", timeStyle: "short"});
+        document.getElementById("time").innerHTML = time;
+      </script>
 
           <h2 style="margin-bottom: 5px;">links/contact</h2>
-      <div class="flexbox">
-        <div><a href="https://twitter.com/aspenbtw">twitter</a></div>
-        <div><a href="https://bsky.app/profile/aspen.me.uk">bluesky</a></div>
-        <div><a href="https://github.com/aspensartin">github</a></div>
-        <div><a href="https://pronouns.page/@autumnaspen">pronouns.page</a></div>
-        <div>discord: <b>autumnaspen</b></div>
-        <div>email: <b>hi@aspen.me.uk</b></div>
-      </div>
+        <div class="flexbox">
+          <div><a href="https://twitter.com/aspenbtw">twitter</a></div>
+          <div><a href="https://bsky.app/profile/aspen.me.uk">bluesky</a></div>
+          <div><a href="https://github.com/aspensartin">github</a></div>
+          <div><a href="https://pronouns.page/@autumnaspen">pronouns.page</a></div>
+          <div>discord: <b>autumnaspen</b></div>
+          <div>email: <b>hi@aspen.me.uk</b></div>
+        </div>
 
-      <div class="flexbox" style="margin-top: 24px;">
-        <div><a href="https://zudo.space" class="ringlink" basetext ="<<&emsp;&emsp;" hovertext="zudo.space"></a></div>
-        <div><a href="https://azurahori.zone" class="ringlink" basetext ="&emsp;&emsp;>>" hovertext="azurahori.zone"></a></div>
+        <div class="flexbox" style="margin-top: 24px;">
+          <div><a href="https://zudo.space" class="ringlink" basetext ="<<&emsp;&emsp;" hovertext="zudo.space"></a></div>
+          <div><a href="https://azurahori.zone" class="ringlink" basetext ="&emsp;&emsp;>>" hovertext="azurahori.zone"></a></div>
+        </div>
+      
       </div>
       
       <p style="font-size: 16px; text-align: center;">(what's the font? it's <a href="https://comicneue.com/">Comic Neue Angular</a>)</p>
