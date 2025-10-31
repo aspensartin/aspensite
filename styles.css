@@ -3,58 +3,35 @@ html {display: table;
 
 body {display: table-cell;
     vertical-align: middle;
-    background-color: #1E252D;
+    background-color: #141414;
     }
 
 @font-face {
-    font-family: "Comic Neue Angular";
-    src: url("ComicNeueAngular-Regular.ttf");
-    src: url("ComicNeueAngular-Regular.woff") format("woff"),
-    url("ComicNeueAngular-Regular.otf") format("opentype"),
-    url("ComicNeueAngular-Regular.woff2") format("woff2"); }
+    font-family: "Overpass Mono";
+    src: url("OverpassMono-VariableFont_wght.ttf") format("truetype"); }
 
-@font-face {
-    font-family: "Comic Neue Angular Bold";
-    src: url("ComicNeueAngular-Bold.ttf");
-    src: url("ComicNeueAngular-Bold.woff") format("woff"),
-    url("ComicNeueAngular-Bold.otf") format("opentype"),
-    url("ComicNeueAngular-Bold.woff2") format("woff2"); }
-
-@font-face {
-    font-family: "Comic Neue Angular Light";
-    src: url("ComicNeueAngular-Light.ttf");
-    src: url("ComicNeueAngular-Light.woff") format("woff"),
-    url("ComicNeueAngular-Light.otf") format("opentype"),
-    url("ComicNeueAngular-Light.woff2") format("woff2"); }
-
-p, ul, li, a, div {font-family: 'Comic Neue Angular Light';}
-
-a {font-family: 'Comic Neue Angular';}
-
-h1, h2, b {font-family: 'Comic Neue Angular Bold';}
+h1, h2, b, p, ul, li, a, div {font-family: 'Overpass Mono';}
 
 p, ul, li, h1, h2, div {color: #fff;}
 
-h1, h2 {text-align: center}
+p, li, div  {font-size: 18px; margin-bottom: 10px; line-height: 1.4; margin-top: 0px;}
 
-p, li, div  {font-size: 18px;}
+h1 {font-size: 42px; margin-bottom: 10px; margin-top: 0px;}
 
-h1 {font-size: 36px}
-
-h2 {font-size: 24px}
+h2 {font-size: 24px; margin-bottom: 10px; margin-top: 0px;}
 
 ul {padding: 0;
-    list-style-position:inside;
-    list-style-type: circle;}
+    list-style-position: inside;
+    list-style-type: "- ";}
 
-li + li {margin-top: 5px;}
+li {margin-top: 0px; margin-bottom: 5px;}
 
 u {text-decoration: none;}  
 
-b, mark {color: #FFA9C6;
-    background-color: #1E252D;}
+b, mark {color: #B2E0FF;
+    background-color: #141414;}
 
-a {color: #D3B5FF;  
+a {color: #B2E0FF;  
     text-decoration: none;}
 
 a:hover {
@@ -84,3 +61,4 @@ a.ringlink:hover::after {
 
 @media (max-width: 678px){
     .aspen {width: 0%; display: none;}
+}

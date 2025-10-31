@@ -20,46 +20,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body style="padding: 40px;" style="max-width: 6px;">
+  <body style="padding: 40px;">
 
-    <div class="aspen" id="scene" style="float: right; padding-bottom: 24px;">
-      <img src="aspenbackground.png" alt="art of Aspen by @grimberriz" height="382px" style="padding-left: 24px;" data-depth="-0.1" class="background">
-      <img src="aspentransparent.png" alt="art of Aspen by @grimberriz" height="383px" style="padding-left: 42px;" data-depth="0.3" class="aspentransparent">
+    <div class="aspen" id="scene" style="float: left;">
+      <img src="aspen_photo.jpg" height="102" class="background">
     </div>
 
     <div class="maintext">
-      <h1 style="margin-top: 0px; margin-bottom: 5px">hi, I'm <mark>Aspen</mark>!</h1>
-      <p style="margin-top: 0px; margin-bottom: 32px; text-align: center;"><b>they/them</b> or <b>she/her</b></p>
-      <p  >British trans girl studying for a PhD in climate science. 35mm photographer, radio amateur, yuri visual novel enjoyer (read <a href=https://vnstudioelan.com/games/please-be-happy><i>Please Be Happy</i></a>)! My character art is by <a href="https://twitter.com/grimberriz">@grimberriz</a>.</p>
+      <h1 style="margin-left: 117px;">aspen.me.uk</h1>
+      <p style=" margin-left: 117px; margin-bottom: 30px;">35mm film photography</p>
+      <p>photos going here soon probably</p>
+      <h2>gear</h2>
+      <ul>
+        <li>canon ae-1</li>
+        <li>sigma mini-wide 28mm f/2.8</li>
+        <li>canon 50mm f/1.8</li>
+        <li>canon 135mm f/3.5</li>
+        <li>sigma zoom delta ii 70-250mm f/3.5-4.5</li>
+      </ul>
 
-      <p>Languages: <b>English</b> (fluent), <b>German</b> (conversational), <b>toki pona</b> (learning).</p>
-      <p>Timezone: London (BST). Right now, it's <u id="time"></u> for me.</p>
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    
-      <script>
-        addEventListener("DOMContentLoaded", (event) => {
-          var scene = document.getElementById("scene");
-          var parallaxInstance = new Parallax(scene, {scalarY: 0
-          });
-        });
-      </script>
+
+          <h2>links/contact</h2>
+        <div class="flexbox" style="margin-bottom: 0px;">
+          <div><a href="https://twitter.com/aspen_ae1">twitter</a></div>
+          <div><a href="https://github.com/aspensartin">github</a></div>
+          <div>e: <mark>hi@aspen.me.uk</mark></div>
+        </div>
+          <p>timezone: london (gmt). current time: <span id="time"></span></p>
 
       <script>  
         var date = new Date();
         var time = date.toLocaleTimeString([], {timeZone: "Europe/London", timeStyle: "short"});
         document.getElementById("time").innerHTML = time;
       </script>
-
-          <h2 style="margin-bottom: 5px;">links/contact</h2>
-        <div class="flexbox">
-          <div><a href="https://twitter.com/aspenbtw">twitter</a></div>
-          <div><a href="https://bsky.app/profile/tgirl.store">bluesky</a></div>
-          <div><a href="https://github.com/aspensartin">github</a></div>
-          <div><a href="https://pronouns.page/@autumnaspen">pronouns.page</a></div>
-          <div>discord: <b>autumnaspen</b></div>
-          <div>email: <b>hi@aspen.me.uk</b></div>
-        </div>
 
         <div class="flexbox" style="margin-top: 24px;">
           <div><a href="https://zudo.space" class="ringlink" basetext ="<<&emsp;&emsp;" hovertext="zudo.space"></a></div>
@@ -68,7 +62,7 @@
       
       </div>
       
-      <p style="font-size: 16px; text-align: center;">(what's the font? it's <a href="https://comicneue.com/">Comic Neue Angular</a>)</p>
+
     </div>
   </body>
 
