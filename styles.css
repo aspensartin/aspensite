@@ -1,10 +1,12 @@
-html {display: table; 
-    margin: auto;}
+html {}
 
-body {display: table-cell;
-    vertical-align: middle;
+body {
     background-color: #141414;
-    }
+    max-width: 1200px;       
+    margin: auto;       
+    padding: 40px;          
+    box-sizing: border-box;  
+}
 
 @font-face {
     font-family: "Overpass Mono";
@@ -20,41 +22,81 @@ h1 {font-size: 42px; margin-bottom: 10px; margin-top: 0px;}
 
 h2 {font-size: 24px; margin-bottom: 10px; margin-top: 0px;}
 
-ul {padding: 0;
-    list-style-position: inside;
-    list-style-type: "- ";}
+ul {padding: 0; list-style-position: inside; list-style-type: "- ";}
 
 li {margin-top: 0px; margin-bottom: 5px;}
 
 u {text-decoration: none;}  
 
-b, mark {color: #B2E0FF;
-    background-color: #141414;}
+b, mark {color: #B2E0FF; background-color: #141414;}
 
-a {color: #B2E0FF;  
-    text-decoration: none;}
+a {color: #B2E0FF; text-decoration: none;}
 
-a:hover {
-    text-decoration: underline;
+a:hover {text-decoration: underline;}
+
+a.ringlink::after {content: attr(basetext)}
+
+a.ringlink:hover::after {content: attr(hovertext)}
+
+.flexbox {
+    justify-content: space-between; 
+    display: flex; 
+    flex-wrap: wrap; 
+    column-gap: 15px
 }
 
-a.nounderline {
-    text-decoration: none;
+.header {
+    display: grid;
+    grid-template-columns: 50% 0% 50%;
+    gap: 15px;
+    align-items: center;
 }
 
-a.ringlink::after {
-    content: attr(basetext)
+.header-left { 
+    grid-column: 1; 
 }
 
-a.ringlink:hover::after {
-    content: attr(hovertext)
+.header-right {
+    grid-column: 2 / 4;
+    justify-self: end;
+    text-align: right;
+    margin-top: 24px;
 }
 
-.flexbox {justify-content: space-between; display: flex; flex-wrap: wrap; row-gap: 5px; column-gap: 15px; max-width: 57  0px;}
-.flexbox>* {flex: 1 1 600;}
+@media screen and (max-width: 1000px) {
+    .header {
+        grid-template-columns: 1fr;
+    }
+    .header-right {
+        grid-column: 1;
+        justify-self: start;
+        text-align: left;
+        margin-top: 0px;
+    }
+}
 
-.jank {text-align: right}
+/* vibecoded, shame this user*/
 
-.parallax {position: relative; left: 500px}
+* { box-sizing: border-box; }
 
-.maintext {max-width: 678px;}
+.row {
+    display: grid;
+    grid-template-columns: 28% 44% 28%; 
+    gap: 15px; 
+    align-items: start;
+    padding: 0 0px;
+}
+
+.landscape,
+.portrait {
+    padding: 0;
+}
+
+.landscape img,
+.portrait img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
