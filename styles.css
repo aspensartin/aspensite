@@ -228,7 +228,7 @@ a.ringlink:hover::after {content: attr(hovertext)}
     .modal-film {
         font-size: 12px;
         text-align: right;
-        margin-top: 6px;
+        margin-top: 7px;
     }
 
     .modal-img {
