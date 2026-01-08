@@ -99,6 +99,59 @@ a.ringlink:hover::after {content: attr(hovertext)}
     cursor: pointer;
 }
 
+/* modified from https://w3collective.com/modal-dialog-alpine-js/ */
+ 
+.modal {
+  position: fixed;
+  inset: 0;                 
+  display: grid;
+  place-items: center;   
+  z-index: 1100;    
+  pointer-events: none;  
+}
+
+.modal-content {
+  background: #141414;
+  padding: 10px 28px 0px 28px;
+  pointer-events: auto;  
+  max-height: 80vh + 56px;
+  max-width: 55vw + 56px;
+  overflow: auto;
+}
+
+.modal-film {
+  text-align: right;
+  margin-top: 10px;
+  margin-bottom: 0px
+}
+
+.modal-img {
+  max-height: 80vh;
+  max-width: 55vw;
+  width: auto;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+[x-cloak] { display: none !important; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.75;
+}
+
+.button-88x31 {
+    width: 88px;
+    height: 31px;
+    image-rendering: pixelated;
+}
 
 @media screen and (max-width: 1100px) {
     .header {
@@ -159,58 +212,32 @@ a.ringlink:hover::after {content: attr(hovertext)}
     .landscape img, .portrait img {
         margin-bottom: 10px;
     }
-}
+    .modal-content {
+        background: #141414;
+        padding: 8px 20px 0px 20px;
+        pointer-events: auto;  
+        max-height: 85vh + 40px;
+        max-width: 70vw + 40px;
+        overflow: auto;
+        }
 
-/* modified from https://w3collective.com/modal-dialog-alpine-js/ */
- 
-.modal {
-  position: fixed;
-  inset: 0;                 
-  display: grid;
-  place-items: center;   
-  z-index: 1100;    
-  pointer-events: none;  
-}
+    .modal-caption {
+        font-size: 12px;
+    }    
 
-.modal-content {
-  background: #141414;
-  padding: 10px 28px 0px 28px;
-  pointer-events: auto;  
-  max-height: 80vh + 56px;
-  max-width: 55vw + 56px;
-  overflow: auto;
-}
+    .modal-film {
+        font-size: 12px;
+        text-align: right;
+        margin-top: 6px;
+    }
 
-.modal-film {
-  text-align: right;
-  margin-top: 10px;
-  margin-bottom: 0px
-}
-
-.modal-img {
-  max-height: 80vh;
-  max-width: 55vw;
-  width: auto;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-}
-
-[x-cloak] { display: none !important; }
-
-.overlay {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: black;
-  opacity: 0.75;
-}
-
-.button-88x31 {
-    width: 88px;
-    height: 31px;
-    image-rendering: pixelated;
+    .modal-img {
+        max-height: 85vh;
+        max-width: 70vw;
+        width: auto;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+    }
 }
