@@ -19,13 +19,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
   </head>
 
-  <body>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <body x-data="{
+    isModalOpen: false,
+    modalSrc: '',
+    modalCaption: '',
+    openModal(src, caption) {
+      this.modalSrc = src;
+      this.modalCaption = caption || '';
+      this.isModalOpen = true;
+    }
+  }"
+  x-on:keydown.escape="isModalOpen=false">
 
     <div class="header">
       <div class="header-left">
-        <img src="aspen_photo.jpg" class="profile">
         <h1 class="profile-text">aspen.me.uk</h1>
-        <p class="profile-text">35mm film photography</p>
+        <p class="profile-text">very amateur film photography</p>
       </div>
 
       <div class="header-right">
@@ -35,44 +46,94 @@
           <div><a href="https://github.com/aspensartin">github</a></div>
           <div>e: <mark>hi@aspen.me.uk</mark></div>
         </div>
-        <p>timezone: london (gmt). current time: <span id="time"></span></p>
+        <div class="flexbox">
+          <a href="index.html" class="no-underline" title="you are here">
+            <img class="button-88x31" src="88x31.gif" >
+          </a>
+          <a href="https://badge.les.bi">
+            <img class="button-88x31" title="transsexual lesbian deal with it x" src="https://badge.les.bi/88x31/trans/lesbi/45-degree/outset.png">
+          </a>
+          <a href="https://june.pet/" class="no-underline" title="june.pet">
+            <img class="button-88x31" src="https://files.june.pet/88x31.png" >
+          </a>
+          <a href="https://aspyn.gay/" class="no-underline" title="aspyn.gay">
+            <img class="button-88x31" src="https://aspyn.gay/88x31.gif" >
+          </a>
+        </div>
       </div>
     </div>
 
-    <div class="row">
+    <div
+      class="modal"
+      role="dialog"
+      tabindex="-1"
+      x-show="isModalOpen"
+      x-on:click.away="isModalOpen = false"
+      x-cloak
+      x-transition
+    >
+      <div class="modal-content">
+        <div class="modal-header">
+          <p x-text="modalCaption"></p>
+        </div>
+        <img class="modal-img" x-bind:src="modalSrc" alt="">
+      </div>
+    </div>
+
+    <div class="overlay" x-show="isModalOpen" x-cloak></div>
+
+    <div class="row"
+         x-on:click="if ($event.target && $event.target.tagName === 'IMG') openModal(
+             $event.target.getAttribute('src').replace('thumbs/','large/'),
+             $event.target.getAttribute('data-caption') || ''
+           )">
       <div class="portrait">
-        <img src="img/portrait_soton_1.jpg">
-        <img src="img/portrait_soton_3.jpg">
-        <img src="img/portrait_reading_2.jpg">
-        <img src="img/portrait_reading_4.jpg">
-        <img src="img/portrait_london_2.jpg">
-        <img src="img/portrait_london_4.jpg">
-        <img src="img/portrait_yorkshire_1.png">
-        <img src="img/portrait_yorkshire_3.png">
+        <img src="thumbs/p_2025_12.webp" data-caption="monsal dale, UK (2025). kentmere pan 400">
+        <img src="thumbs/p_2025_10.webp" data-caption="moorgate, UK (2025). kodak ultramax 400">
+        <img src="thumbs/p_2025_8.webp" data-caption="portsmouth cathedral, UK (2025). phoenix ii">
+        <img src="thumbs/p_2025_6.webp" data-caption="greenwich park, UK (2025). ilford hp5 plus">
+        <img src="thumbs/p_2025_4.webp" data-caption="greenwich park, UK (2025). ilford hp5 plus">  
+        <img src="thumbs/p_2025_2.webp" data-caption="southampton, UK (2025). BKIFI pride hearts">
+        <img src="thumbs/p_2020_4.webp" data-caption="yorkshire sculpture park, UK (2020). ilford hp5 plus">  
+        <img src="thumbs/p_2020_2.webp" data-caption="staithes, UK (2020). ilford hp5 plus"> 
+        <img src="thumbs/p_2019_1.webp" data-caption="berlin, DE (2019). ilford fp4 plus">
       </div>
       <div class="landscape">
-        <img src="img/landscape_soton_1.jpg">
-        <img src="img/landscape_soton_2.jpg">
-        <img src="img/landscape_soton_3.jpg">
-        <img src="img/landscape_reading_1.jpg">
-        <img src="img/landscape_london_1.jpg">
-        <img src="img/landscape_london_2.jpg">
-        <img src="img/landscape_yorkshire_1.png">
-        <img src="img/landscape_yorkshire_2.png">
-        <img src="img/landscape_yorkshire_3.png">
-        <img src="img/landscape_berlin_1.png">
-        <img src="img/landscape_berlin_2.png">
-        <img src="img/landscape_berlin_3.png">
+        <img src="thumbs/l_2025_12.webp" data-caption="monsal dale, UK (2025). kentmere pan 400">
+        <img src="thumbs/l_2025_11.webp" data-caption="sheffield, UK (2025). kentmere pan 400">
+        <img src="thumbs/l_2025_10.webp" data-caption="sheffield, UK (2025). kentmere pan 400">
+        <img src="thumbs/l_2025_9.webp" data-caption="sheffield, UK (2025) kodak ultramax 400">
+        <img src="thumbs/l_2025_8.webp" data-caption="sheffield, UK (2025) kodak ultramax 400">
+        <img src="thumbs/l_2025_7.webp" data-caption="sheffield, UK (2025) kodak ultramax 400">
+        <img src="thumbs/l_2025_6.webp" data-caption="sheffield, UK (2025) kodak ultramax 400">
+        <img src="thumbs/l_2025_5.webp" data-caption="old st, UK (2025) kodak ultramax 400">
+        <img src="thumbs/l_2025_4.webp" data-caption="portsmouth rock garden, UK (2025). phoenix ii">
+        <img src="thumbs/l_2025_3.webp" data-caption="portsmouth, UK (2025). phoenix ii">
+        <img src="thumbs/l_2025_2.webp" data-caption="woolwich, UK (2025). ilford hp5 plus">
+        <img src="thumbs/l_2025_1.webp" data-caption="southampton common, UK (2025). phoenix ii">
+        <img src="thumbs/l_2020_2.webp" data-caption="staithes, UK (2020). ilford hp5 plus">
+        <img src="thumbs/l_2020_1.webp" data-caption="whitby abbey, UK (2020). ilford hp5 plus">
+        <img src="thumbs/l_2019_2.webp" data-caption="berlin, DE (2019). ilford hp5 plus">
+        <img src="thumbs/l_2019_1.webp" data-caption="berlin, DE (2019). ilford hp5 plus">
       </div>
         <div class="portrait">
-        <img src="img/portrait_soton_2.jpg">
-        <img src="img/portrait_reading_1.jpg">
-        <img src="img/portrait_reading_3.jpg">
-        <img src="img/portrait_london_1.jpg">
-        <img src="img/portrait_london_3.jpg">
-        <img src="img/portrait_yorkshire_2.png">
-        <img src="img/portrait_berlin_1.png">        
+        <img src="thumbs/p_2025_11.webp" data-caption="sheffield, UK (2025) kodak ultramax 400">
+        <img src="thumbs/p_2025_9.webp" data-caption="portsmouth city walls, UK (2025). phoenix ii">
+        <img src="thumbs/p_2025_7.webp" data-caption="reading, UK (2025). film washi D">
+        <img src="thumbs/p_2025_5.webp" data-caption="greenwich park, UK (2025). ilford hp5 plus">
+        <img src="thumbs/p_2025_3.webp" data-caption="southampton, UK (2025). BKIFI pride hearts">  
+        <img src="thumbs/p_2025_1.webp" data-caption="warsash, UK (2025). phoenix ii">
+        <img src="thumbs/p_2020_3.webp" data-caption="yorkshire sculpture park, UK (2020). ilford hp5 plus">  
+        <img src="thumbs/p_2020_1.webp" data-caption="whitby abbey, UK (2020). ilford hp5 plus">    
       </div>
+    </div>
+
+
+
+    <div class="flexbox" style="margin-top: 24px;">
+      <div><a href="https://zudo.space" class="ringlink" basetext ="<<&emsp;&emsp;" hovertext="zudo.space"></a></div>
+      <p>timezone: london (gmt). current time: <span id="time"></span></p>
+      <div><a href="https://azurahori.zone" class="ringlink" basetext ="&emsp;&emsp;>>" hovertext="azurahori.zone"></a></div>
     </div>
 
     <script>  
@@ -80,11 +141,6 @@
       var time = date.toLocaleTimeString([], {timeZone: "Europe/London", timeStyle: "short"});
       document.getElementById("time").innerHTML = time;
     </script>
-
-    <div class="flexbox" style="margin-top: 24px;">
-      <div><a href="https://zudo.space" class="ringlink" basetext ="<<&emsp;&emsp;" hovertext="zudo.space"></a></div>
-      <div><a href="https://azurahori.zone" class="ringlink" basetext ="&emsp;&emsp;>>" hovertext="azurahori.zone"></a></div>
-    </div>
 
   </body>
 
