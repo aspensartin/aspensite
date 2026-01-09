@@ -47,6 +47,7 @@ a.ringlink:hover::after {content: attr(hovertext)}
 }
 
 .profile-photo {
+    width: 148px;
     height: 148px; 
     float: right;
     margin: 8px 0 0 8px;
