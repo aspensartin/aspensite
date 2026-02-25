@@ -226,7 +226,10 @@ a.ringlink:hover::after {content: attr(hovertext)}
     .row {
         gap: 10px;
     }
-    .landscape img, .portrait img {
+    .landscape img {
+        margin-bottom: 12px;
+    }
+    .portrait img {
         margin-bottom: 10px;
     }
     .modal-content {
